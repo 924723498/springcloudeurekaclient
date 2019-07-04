@@ -1,0 +1,18 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      lease-expiration-duration-in-seconds: 300000
+      lease-renewal-interval-in-seconds: 1000000
+      non-secure-port: ${server.port}
+server:
+  port: 8762
+spring:
+  session:
+    store-type: none
+  application:
+    name: eurekaClient
+
+
+
